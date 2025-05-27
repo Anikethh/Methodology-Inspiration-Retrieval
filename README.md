@@ -1,4 +1,4 @@
-# Methodology Inspiration Retrieval
+# 🎯 Methodology Inspiration Retrieval
 
 This repository houses the datasets used in  in our ACL 2025 paper:
 **"MIR: Methodology Inspiration Retrieval for Scientific Research Problems"**  🎓
