@@ -3,7 +3,7 @@
 This repository houses the datasets used in our ACL 2025 paper:
 **"MIR: Methodology Inspiration Retrieval for Scientific Research Problems"**  🎓
 
-![MIR Diagram](assets/Diagram.png)
+<img src="assets/Diagram.png" alt="MIR Diagram" width="400"/>
 
 ## 🧠 What’s This About?
 
@@ -15,7 +15,7 @@ Our paper explores fundamental questions:
 
 We **extend the MultiCite Dataset** (Lauscher et al. 2022), originally designed for *citation context intent classification*, and **repurpose this for our retrieval benchmark**. Specifically, we consider citations annotated with the intent *uses or extends* as methodologically relevant. We find this provides the most actionable signal towards tracing methodological inspirations in the literature. We further source papers from arXiv, and follow the same procedure in the original paper using their fine-tuned SciBERT model in MultiCite to derive an augmented training dataset, more appropriate for the benchmark.
 
-We use the resulting **MIR-Multicite dataset** to derive the Methodology Adjacency Graph (MAG), which can be understood as a pruned citation graph, where edges are annotated with citation intents pivotal for the task, viz. ‘methodology’ or ‘non-methodology’. Using this structure our paper fine-tunes retrievers by sampling positive, and hard/soft negatives from the MAG using a joint triplet loss.
+We use the resulting **MIR-Multicite dataset** to derive the *Methodology Adjacency Graph (MAG)*, which can be understood as a pruned citation graph, where edges are annotated with citation intents pivotal for the task, viz. ‘methodology’ or ‘non-methodology’. Using this structure our paper fine-tunes retrievers by sampling positive, and hard/soft negatives from the MAG using a joint triplet loss.
 
 
 ## 📦 Dataset Overview
@@ -35,9 +35,7 @@ The dataset is organized into the following splits:
 
 ### 🧪Evaluation Settings
 
-The evaluation settings are divided into two distinct methods to (a) avoid temporal overlap introduced by cited papers of proposals in the same test set, and (b) to avoid overlap with cited papers in the training set. We term these *Restricted Corpus* and *Extended Corpus*. *Restricted Corpus* contains all the cited papers in the test set, while *Extended Corpus* dynamically considers cited papers from both the training set and ground-truth citations associated with each test proposal. This tests retriever performance across a more expansive and diverse corpus
-
----
+The evaluation settings are divided into two distinct methods to (a) avoid temporal overlap introduced by cited papers of proposals in the same test set, and (b) to avoid overlap with cited papers in the training set. We term these **Restricted Corpus** and **Extended Corpus**. **Restricted Corpus** contains all the cited papers in the test set, while **Extended Corpus** dynamically considers cited papers from both the training set and ground-truth citations associated with each test proposal. This tests retriever performance across a more expansive and diverse corpus
 
 ## 📄 Citation
 
