@@ -3,7 +3,7 @@
 This repository houses the datasets used in our ACL 2025 paper:
 **"MIR: Methodology Inspiration Retrieval for Scientific Research Problems"**  🎓
 
-<img src="assets/Diagram.png" alt="MIR Diagram" width="400"/>
+![MIR Diagram](assets/Diagram.png)
 
 ## 🧠 What’s This About?
 
