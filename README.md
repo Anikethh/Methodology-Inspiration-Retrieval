@@ -3,7 +3,8 @@
 This repository houses the datasets used in  in our ACL 2025 paper:
 **"MIR: Methodology Inspiration Retrieval for Scientific Research Problems"**  🎓
 
----
+![MIR Diagram](assets/Diagram.pdf)
+
 ## 🧠 What’s This About?
 
 Our paper explores fundamental questions:
@@ -16,7 +17,6 @@ We **extend the MultiCite Dataset** (Lauscher et al. 2022), originally designed 
 
 We use the resulting **MIR-Multicite dataset** to derive the Methodology Adjacency Graph (MAG), which can be understood as a pruned citation graph, where edges are annotated with citation intents pivotal for the task, viz. ‘methodology’ or ‘non-methodology’. Using this structure our paper fine-tunes retrievers by sampling positive, and hard/soft negatives from the MAG using a joint triplet loss.
 
----
 
 ## 📦 Dataset Overview
 
