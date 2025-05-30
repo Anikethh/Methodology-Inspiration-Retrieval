@@ -15,7 +15,7 @@ Our paper explores fundamental questions:
 
 We **extend the MultiCite Dataset** (Lauscher et al. 2022), originally designed for *citation context intent classification*, and **repurpose this for our retrieval benchmark**. Specifically, we focus citations that provide the most actionable signal towards tracing methodological inspirations in the literature. We extend the original training data by augmenting latest papers from arXiv, up till mid 2024.
 
-Using citation *texts* and citation *intents*, we derive the *Methodology Adjacency Graph (MAG)*, which can be understood as a pruned citation graph, where edges are annotated with citation intents pivotal for the task, viz. ‘methodology’ or ‘non-methodology’. 
+Using citation *texts* and citation *intents*, we derive the *Methodology Adjacency Graph (MAG)*, a pruned citation graph, where edges are annotated with citation intents pivotal for the task, viz. ‘methodology’ or ‘non-methodology’. 
 
 Finally we train dense retrievers by sampling triplets from the MAG and fine-tune retrievers by with a joint triplet loss. We find significant gains in recall and mean average precision using these methods.
 
