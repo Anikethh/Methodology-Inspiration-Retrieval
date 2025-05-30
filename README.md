@@ -9,13 +9,15 @@ This repository houses the datasets used in our ACL 2025 paper:
 
 Our paper explores fundamental questions:
 
-- What’s the best aspect to retrieve papers on when designing novel scientific hypotheses?
+- What’s the best way to retrieve papers on when designing novel scientific hypotheses?
 - Are current retrievers trained on semantic similarity enough to inspire new solutions?
 - What does it take to retrieve true methodological inspirations?
 
-We **extend the MultiCite Dataset** (Lauscher et al. 2022), originally designed for *citation context intent classification*, and **repurpose this for our retrieval benchmark**. Specifically, we consider citations annotated with the intent *uses or extends* as methodologically relevant. We find this provides the most actionable signal towards tracing methodological inspirations in the literature. We further source papers from arXiv, and follow the same procedure in the original paper using their fine-tuned SciBERT model in MultiCite to derive an augmented training dataset, more appropriate for the benchmark.
+We **extend the MultiCite Dataset** (Lauscher et al. 2022), originally designed for *citation context intent classification*, and **repurpose this for our retrieval benchmark**. Specifically, we focus citations that provide the most actionable signal towards tracing methodological inspirations in the literature. We extend the original training data by augmenting latest papers from arXiv, up till mid 2024.
 
-We use the resulting **MIR-Multicite dataset** to derive the *Methodology Adjacency Graph (MAG)*, which can be understood as a pruned citation graph, where edges are annotated with citation intents pivotal for the task, viz. ‘methodology’ or ‘non-methodology’. Using this structure our paper fine-tunes retrievers by sampling positive, and hard/soft negatives from the MAG using a joint triplet loss.
+Using citation *texts* and citation *intents*, we derive the *Methodology Adjacency Graph (MAG)*, which can be understood as a pruned citation graph, where edges are annotated with citation intents pivotal for the task, viz. ‘methodology’ or ‘non-methodology’. 
+
+Finally we train dense retrievers by sampling triplets from the MAG and fine-tune retrievers by with a joint triplet loss. We find significant gains in recall and mean average precision using these methods.
 
 
 ## 📦 Dataset Overview
@@ -31,7 +33,7 @@ The dataset is organized into the following splits:
 - **Training Set**: Proposals prior to the year 2019.
 - **Development Set**: Proposals from January to June 2019.
 - **Test Set**: Proposals after June 2019.
-- **Augmented Training Set**: Additional proposals to ensure consistent domain representation.
+- **Augmented Training Set**: Additional proposals up till mid 2024 to ensure consistent domain representation.
 
 ### 🧪Evaluation Settings
 
