@@ -44,7 +44,15 @@ The evaluation settings are divided into two distinct methods to (a) avoid tempo
 If you intend to use this dataset in your work, please consider citing our paper "MIR: Methodology Inspiration Retrieval for Scientific Research Problems".
 
 ```
-Coming soon.
+@misc{garikaparthi2025mirmethodologyinspirationretrieval,
+      title={MIR: Methodology Inspiration Retrieval for Scientific Research Problems}, 
+      author={Aniketh Garikaparthi and Manasi Patwardhan and Aditya Sanjiv Kanade and Aman Hassan and Lovekesh Vig and Arman Cohan},
+      year={2025},
+      eprint={2506.00249},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2506.00249}, 
+}
 ```
 And the original MultiCite paper.
 ```
