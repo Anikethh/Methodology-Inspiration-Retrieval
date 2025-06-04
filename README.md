@@ -43,7 +43,7 @@ The evaluation settings are divided into two distinct methods to (a) avoid tempo
 
 ## 📄 Citation
 
-If you intend to use this dataset in your work, please consider citing our paper "MIR: Methodology Inspiration Retrieval for Scientific Research Problems".
+If you intend to use this dataset in your work, please consider citing our paper:
 
 ```
 @misc{garikaparthi2025mirmethodologyinspirationretrieval,
@@ -56,7 +56,7 @@ If you intend to use this dataset in your work, please consider citing our paper
       url={https://arxiv.org/abs/2506.00249}, 
 }
 ```
-And the original MultiCite paper.
+And the original MultiCite paper:
 ```
 @inproceedings{lauscher-etal-2022-multicite,
     title = "{M}ulti{C}ite: Modeling realistic citations requires moving beyond the single-sentence single-label setting",
