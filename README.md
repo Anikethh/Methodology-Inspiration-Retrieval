@@ -46,14 +46,28 @@ The evaluation settings are divided into two distinct methods to (a) avoid tempo
 If you intend to use this dataset in your work, please consider citing our paper:
 
 ```
-@misc{garikaparthi2025mirmethodologyinspirationretrieval,
-      title={MIR: Methodology Inspiration Retrieval for Scientific Research Problems}, 
-      author={Aniketh Garikaparthi and Manasi Patwardhan and Aditya Sanjiv Kanade and Aman Hassan and Lovekesh Vig and Arman Cohan},
-      year={2025},
-      eprint={2506.00249},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2506.00249}, 
+@inproceedings{garikaparthi-etal-2025-mir,
+    title = "{MIR}: Methodology Inspiration Retrieval for Scientific Research Problems",
+    author = "Garikaparthi, Aniketh  and
+      Patwardhan, Manasi  and
+      Kanade, Aditya Sanjiv  and
+      Hassan, Aman  and
+      Vig, Lovekesh  and
+      Cohan, Arman",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.1390/",
+    doi = "10.18653/v1/2025.acl-long.1390",
+    pages = "28614--28659",
+    ISBN = "979-8-89176-251-0",
+    abstract = "There has been a surge of interest in harnessing the reasoning capabilities of Large Language Models (LLMs) to accelerate scientific discovery. While existing approaches rely on grounding the discovery process within the relevant literature, effectiveness varies significantly with the quality and nature of the retrieved literature. We address the challenge of retrieving prior work whose concepts can inspire solutions for a given research problem, a task we define as Methodology Inspiration Retrieval (MIR). We construct a novel dataset tailored for training and evaluating retrievers on MIR, and establish baselines. To address MIR, we build the Methodology Adjacency Graph (MAG); capturing methodological lineage through citation relationships. We leverage MAG to embed an ``intuitive prior'' into dense retrievers for identifying patterns of methodological inspiration beyond superficial semantic similarity. This achieves significant gains of +5.4 in Recall@3 and +7.8 in Mean Average Precision (mAP) over strong baselines. Further, we adapt LLM-based re-ranking strategies to MIR, yielding additional improvements of +4.5 in Recall@3 and +4.8 in mAP. Through extensive ablation studies and qualitative analyses, we exhibit the promise of MIR in enhancing automated scientific discovery and outline avenues for advancing inspiration-driven retrieval."
 }
 ```
 And the original MultiCite paper:
