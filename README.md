@@ -41,6 +41,16 @@ The dataset is organized into the following splits:
 
 The evaluation settings are divided into two distinct methods to (a) avoid temporal overlap introduced by cited papers of proposals in the same test set, and (b) to avoid overlap with cited papers in the training set. We term these **Restricted Corpus** and **Extended Corpus**. **Restricted Corpus** contains all the cited papers in the test set, while **Extended Corpus** dynamically considers cited papers from both the training set and ground-truth citations associated with each test proposal. This tests retriever performance across a more expansive and diverse corpus
 
+## Dataset licensing and patent notice
+
+Original MIR dataset contributions are made available under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). See [LICENSE](LICENSE) for the license and its scope.
+
+This license does not replace the terms applicable to third-party material. MultiCite-derived material remains subject to CC BY-NC 2.0, and material sourced from arXiv remains subject to the applicable individual-paper licenses and permissions.
+
+The MIR method described in the associated paper is the subject of a patent application. The dataset license covers only the copyright and database rights specified in that license. Third-party material remains subject to its applicable licenses and permissions.
+
+When sharing or adapting the licensed MIR contributions, provide attribution, link to CC BY 4.0, and indicate any changes. Please use the paper citation provided below when citing MIR in research.
+
 ## 📄 Citation
 
 If you intend to use this dataset in your work, please consider citing our paper:
